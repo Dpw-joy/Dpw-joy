@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Application</title>
+    <style>
+      body{
+        text-align: center;
+        background-image: url(https://img.freepik.com/premium-photo/group-friends-standing-water-making-cheers-against-sunset_474601-6591.jpg);
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        border: 10px;
+        margin: 30px;
+      }
+      #text{
+       flex-wrap: wrap;
+      }
+      input[type="submit"]:hover{
+        color: blue;
+      }
+      #footer{
+        text-align: bottom;
+        margin-bottom: 100px;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Friendship Application</h1>
+    <p id="p1">Read carefully and provide the spaces with the required information.</p>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="enter name">
+        <br>
+        <!--nickname field is optional-->
+        <label for="ni">Nickname</label>
+        <input type="text" id="ni" placeholder="optional">
+        <br>
+        <label for="em">Email</label>
+        <input type="email" name="email" id="em" placeholder="example@gmail.com">
+        <br>
+        <label for="na">Nationality</label>
+        <input id="na" name="country" type="text">
+      </form>
+  <p id="p2">Pick your gender</p>
+  <form>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+    <label>Birthday</label>
+    <input type="date" name="birthday">
+    <br>
+    <label for="dropdown">Age</label>
+    <select id="dropdown">
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18" selected>18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="above">above</option>
+    </select>
+    <br>
+    <!--image to upload-->
+    <input type="file" id="fileToUpload" name="fileToUpload">
+    
+    <input type="submit" value="Upload image" name="submit">
+    <label for="fileToUpload"></label>
+
+    <br>
+
+  </form>
+    <textarea name="message" placeholder="describe yourself" id="text"></textarea>
+    <form>
+      <input type="checkbox" id="c1" name="checkbox">
+      <label for="c1">I have successfully filled the above form correctly</label>
+    </form>
+    <input type="submit" name="submit" value="submit">
+    
+   
+</body>
+<footer id="footer">
+  <p>copyright &copy;2023 My form made with <3</p>
+</footer>
+</html>
